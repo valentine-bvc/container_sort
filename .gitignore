@@ -1,0 +1,6 @@
+.clang-format
+.clangd
+Debug/
+container_sorting_algorithm.mk
+container_sorting_algorithm.project
+container_sorting_algorithm.txt
