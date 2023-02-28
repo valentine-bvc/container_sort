@@ -7,7 +7,7 @@
 // 
 
 template<typename T>
-void print_collection(T collection [], size_t size) {
+void print_collection (T collection [], size_t size) {
     for(size_t i {}; i < size; i++)
         std::cout << collection[i] << " ";
     
@@ -15,25 +15,26 @@ void print_collection(T collection [], size_t size) {
 }
 
 template<typename T>
-void sort_it(T collection [],size_t size){
+void sort_it(T collection [], size_t size){
     for(size_t i{1}; i < size; i++){
-        T key=collection[i];
-        int j=i-1;
-        while(j>=0 && collection[j] > key){
+        T key = collection[i];
+        int j = i-1;
+        while(j >= 0 && collection[j] > key){
             collection[j+1] = collection[j];
-            collection[j]=key;
+            collection[j] = key;
             j--;
         } 
         
-        collection[j+1]=key;
+        collection[j+1] = key;
         
     }
     
     
 } 
 
-/// Solution without templates
-///
+
+/// Solution without templates (auto deduction with c++20)
+//
 //void print_collection(auto collection [], size_t size) {
 //    for(size_t i {}; i < size; i++)
 //        std::cout << collection[i] << " ";
@@ -42,23 +43,23 @@ void sort_it(T collection [],size_t size){
 //}
 //
 //
-//void sort_it(auto collection [],size_t size){
+//void sort_it(auto collection [], size_t size){
 //    for(size_t i{1}; i < size; i++){
-//        auto key=collection[i];
-//        int j=i-1;
+//        auto key = collection[i];
+//        int j = i-1;
 //        while(j>=0 && collection[j] > key){
 //            collection[j+1] = collection[j];
-//            collection[j]=key;
+//            collection[j] = key;
 //            j--;
 //        } 
 //        
-//        collection[j+1]=key;
+//        collection[j+1] = key;
 //        
 //    }
 //    
 //    
 //}
-
+//
 
 
 
