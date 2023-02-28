@@ -1,6 +1,10 @@
 #include <iostream>
 #include <string>
 
+/// This is created by Valentin Bruma
+//  This app is using generic programming with both template and auto deduction to sort 
+//  elements using the shift and insert method
+// 
 
 template<typename T>
 void print_collection(T collection [], size_t size) {
@@ -62,6 +66,9 @@ int main()
 {
     
 ///// testing examples
+
+
+//example using strings
    std::string names[] {"Zack", "Courtney", "Shaley", "Andrew", "Sun", "Vick"};
    
    std::cout <<  "Before sorting: " << std::endl;;
@@ -74,6 +81,7 @@ int main()
    
    std::cout << std::endl << std::endl;
    
+//example using ints
    int numbers [] {20, 2, 40 , 3 , 1 , 19, 50, 14};
    
    std::cout <<  "Before sorting: " << std::endl;;
